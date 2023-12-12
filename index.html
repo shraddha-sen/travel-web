@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tourism reponsive website build using HTML5, CSS3 and Javascript. The complete layout of the page is build using grid layout and flexbox with some cool animations"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="stylesheet" href="font/stylesheet.css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <title>Tourism - Travel,Wander and Explore </title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="navigation">
+          <div class="logo">Tourism</div>
+          <img
+            src="img/nav-icon.svg"
+            class="nav-icon"
+            alt="navigation icon"
+            width="30"
+            height="30"
+          />
+          <ul>
+            <li>
+              <a href="#home"> Home </a>
+            </li>
+            <li>
+              <a href="#about"> About </a>
+            </li>
+            <li>
+              <a href="#tours"> Tours </a>
+            </li>
+            <li>
+              <a href="#offers"> Offers </a>
+            </li>
+            <li>
+              <button class="btn">Book Now</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- SECTION HERO -->
+      <section class="section-hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="heading heading--1 margin-bottom">
+              We Travel not to escape life BUT FOR LIFE not to escape us
+            </h1>
+            <button class="btn">Explore now</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION SEARCH -->
+      <section class="section-search">
+        <div class="container search-box">
+          <div class="wrapper">
+            <h3>Destination</h3>
+            <div class="custom-select">
+              <select>
+                <option value="england">England</option>
+                <option value="france">France</option>
+                <option value="italy">Italy</option>
+                <option value="india">India</option>
+                <option value="india">Spain</option>
+                <option value="maldives">Maldives</option>
+              </select>
+              <span class="arrow"></span>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <h3>Date</h3>
+            <div class="custom-date">
+              <input type="date" id="date" />
+              <img src="./img/calendar.svg" alt="" class="calender-icon" />
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <h3>Average Price</h3>
+            <div class="custom-select">
+              <select>
+                <option value="Rs10000">Rs 10000 - Rs15000</option>
+                <option value="Rs15000">Rs15000 - Rs10000</option>
+                <option value="Rs100000">Rs10000 - Rs20000</option>
+              </select>
+              <span class="arrow"></span>
+            </div>
+          </div>
+          <button class="btn">Search</button>
+        </div>
+      </section>
+
+      <!-- SECTION ABOUT -->
+      <section class="section-about" id="about">
+        <div class="container about-box" data-aos="fade-up">
+          <div class="about-box__heading">
+            <h3 class="color-blue margin-bottom">About us</h3>
+            <div class="heading heading--1 capitalize">
+              Explore all corners of the world with us
+            </div>
+          </div>
+          <div class="about-box__content">
+            <p class="margin-bottom">
+              Since 2017, Tourism has helped budget-savvy travelers explore the globe at a discount.We have access to some of the most innovative, intuitive technologies
+              the travel industry has to offer. Whether you book right here on our website or using our award
+              winning app, one thing is for sure – Tourism can help you save big on your next trip
+            </p>
+            <button class="btn btn--secondary">Read More</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION TOURS -->
+      <section class="section-tours" id="tours">
+        <div class="container tour-box" data-aos="fade-up">
+          <header class="tour-box__heading">
+            <h2 class="heading heading--2 color-blue margin-bottom">
+              our top tours
+            </h2>
+            <p>
+              "These tour is well-paced with good hotels, comprehensive city tours, and some amazing..."
+            </p>
+          </header>
+
+          <article class="tour-box__cards">
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/england.jpg"
+                alt="england"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">ENGLAND</h3>
+                  <p class="price">Rs 10000/-</p>
+                </div>
+
+                <div class="t-card__description">
+                  London boasts some of the best museums in the world, famous sights and an exciting nightlife.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">5 Days</div>
+                  <div class="likes">
+                    <img
+                      src="img/heart.svg"
+                      alt="heart"
+                      width="20"
+                      height="20"
+                    />
+                    4.9k
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/france.jpg"
+                alt="france"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">FRANCE</h3>
+                  <p class="price">Rs 150000/-</p>
+                </div>
+
+                <div class="t-card__description">
+                  "France is a country that is popular for unique places.France has tremendous historical and cultural significance."
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">6 Days</div>
+                  <div class="likes">
+                    <img
+                      src="img/heart.svg"
+                      alt="heart"
+                      width="20"
+                      height="20"
+                    />
+                    4.9k
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/itally.jpg"
+                alt="ITALY"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">ITALY</h3>
+                  <p class="price">Rs 10000/-</p>
+                </div>
+
+                <div class="t-card__description">
+                  Italy is filled with riches. It offers you spectacular cities, ancient ruins and wonderful museums.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">3 Days</div>
+                  <div class="likes">
+                    <img
+                      src="img/heart.svg"
+                      alt="heart"
+                      width="20"
+                      height="20"
+                    />
+                    4.8k
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/india.jpg"
+                alt="india"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">INDIA</h3>
+                  <p class="price">Rs 15000/-</p>
+                </div>
+
+                <div class="t-card__description">
+                  It has unique aesthetic qualities in balance, symmetry and harmonious blending of various elements.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">7 Days</div>
+                  <div class="likes">
+                    <img
+                      src="img/heart.svg"
+                      alt="heart"
+                      width="20"
+                      height="20"
+                    />
+                    4.8k
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/spain.jpg"
+                alt="spain"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">SPAIN</h3>
+                  <p class="price">Rs 400000/-</p>
+                </div>
+
+                <div class="t-card__description">
+                  From undiscovered,With over 300 days of sunshine each year you're guaranteed the weather to enjoy them!
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">5 Days</div>
+                  <div class="likes">
+                    <img
+                      src="img/heart.svg"
+                      alt="heart"
+                      width="20"
+                      height="20"
+                    />
+                    4.7k
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/maldives.jpg"
+                alt="maldives"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">MALDIVES</h3>
+                  <p class="price">Rs 50000/-</p>
+                </div>
+
+                <div class="t-card__description">
+                  The Maldives is famous for a number of reasons, including its vibrant culture, pristine beaches and sprawling greenery
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">2 Days</div>
+                  <div class="likes">
+                    <img
+                      src="img/heart.svg"
+                      alt="heart"
+                      width="20"
+                      height="20"
+                    />
+                    4.8k
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION OFFER -->
+      <section class="section-offer" id="offers">
+        <div class="container offer-box">
+          <div class="offer-box__percentage" data-aos="zoom-in">50%</div>
+          <div class="offer-box__content" data-aos="fade-up">
+            <h2 class="heading heading--2">
+              Special Offer this month on our premium tours Rs 10000/- Regular Rs 50000/-
+            </h2>
+            <p>
+              To make the occasion special, we have a special India Package deals for you. This exclusive tour offers in India present amazing opportunities to explore the country. Browse through season special India holiday deals with a wide range of options for summer, monsoon, and winter.
+            </p>
+            <button class="btn">book Now</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION REVIEW -->
+      <section class="section-review">
+        <div class="container review-box" data-aos="fade-up">
+          <header class="review-header">
+            <h3 class="color-blue">Our Reviews</h3>
+            <h2 class="heading heading--2">What the people say about us</h2>
+          </header>
+
+          <article class="review-cards">
+            <div class="r-card">
+              <img
+                src="img/user-1.jpg"
+                alt=""
+                class="r-card__img"
+                width="90"
+                height="90"
+              />
+              <div class="r-card__name">Rahul</div>
+              <span class="quot">&#8223;</span>
+              <div class="r-card__description">
+                I liked the website options and fully satisfied with the overall service of Tourism.
+              </div>
+              <div class="r-card__rating">
+                <img
+                  src="img/star-grp.svg"
+                  alt="star"
+                  width="100"
+                  height="30"
+                />
+              </div>
+            </div>
+
+            <div class="r-card">
+              <img
+                src="img/user-2.jpg"
+                alt=""
+                class="r-card__img"
+                width="90"
+                height="90"
+              />
+              <div class="r-card__name">LANA</div>
+              <span class="quot">&#8223;</span>
+              <div class="r-card__description">
+                We are back from one of the most amazing vacations we've been on lately! It was indeed a great experience
+              </div>
+              <div class="r-card__rating">
+                <img
+                  src="img/star-grp.svg"
+                  alt="star"
+                  width="100"
+                  height="30"
+                />
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- SECTION FOOTER -->
+    <footer class="section-footer">
+      <div class="footer-box container">
+        <div class="contact-details">
+          <h2 class="heading heading--2 margin-bottom">Tourism</h2>
+          <ul class="contact-data">
+            <li class="location">90 Mayur Vihar, New Delhi</li>
+            <li class="phone">+00 000 000 00</li>
+            <li class="email">Tourism@domine.com</li>
+            <li class="social">
+              <img
+                src="./img/logo-whatsapp.svg"
+                alt="whatsapp icon"
+                width="35"
+                height="35"
+              />
+
+              <img
+                src="./img/logo-facebook.svg"
+                alt="facebook icon"
+                width="35"
+                height="35"
+              />
+
+              <img
+                src="./img/logo-instagram.svg"
+                alt="instagram icon"
+                width="35"
+                height="35"
+              />
+
+              <img
+                src="./img/logo-twitter.svg"
+                alt="twitter icon"
+                width="35"
+                height="35"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <nav class="footer-nav" aria-label="navigation">
+          <div class="nav-name">Quick Links</div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#offers">Offeres</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav" aria-label="navigation">
+          <div class="nav-name">Popular Destination</div>
+          <ul>
+            <li><a href="#tours">Italy</a></li>
+            <li><a href="#tours">England</a></li>
+            <li><a href="#tours">India</a></li>
+            <li><a href="#tours">Spain</a></li>
+            <li><a href="#tours">Maldives</a></li>
+          </ul>
+        </nav>
+
+        <div class="newsletter">
+          <div class="newsletter__title">News Letter</div>
+          <div class="newsletter__text">
+            Activate wanderlust with a beautiful travel  of the world.
+          </div>
+          <form class="newsletter__input">
+            <input type="text" placeholder="example@domine.com" />
+            <img
+              src="./img/send.svg"
+              alt="send icon"
+              class="send-icon"
+              width="36"
+              height="36"
+            />
+          </form>
+        </div>
+
+        <div class="legel">
+          <p class="text">Copyright &copy; by Prashant K&nbsp;</p>
+          
+            <img
+              src="img/github.svg"
+              alt="github"
+              class="github"
+              width="35"
+              height="35"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="index.js"></script>
+  </body>
+</html>
